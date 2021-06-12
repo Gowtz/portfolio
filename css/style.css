@@ -184,9 +184,14 @@ a{
     display: grid;
     place-items: center;
 }
-
+.card:hover{
+    transform: translateY(-10px);
+}
 @media screen and (max-width: 786px) {
     .card-page{
         flex-direction: column;
     }
+}
+footer{
+    height: 100px;
 }
