@@ -10,7 +10,7 @@ html{
 /* header  */
 
 header {
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     background-color: #fff;
     position: fixed;
@@ -29,6 +29,10 @@ nav {
 .logo {
     font-size: 1.8rem;
 }
+.logo a{
+    color: black;
+}
+
 
 @media screen and (max-width: 786px) {
     .links {
@@ -159,5 +163,30 @@ a{
     }
     .disless{
         display: none;
+    }
+}
+.card-page{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(248, 231, 231);
+    border-radius: 16px;
+    margin: 30px;
+    box-shadow: -25px 25px 15px rgba(0, 0,0,0.3);
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 786px) {
+    .card-page{
+        flex-direction: column;
     }
 }
