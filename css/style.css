@@ -1,18 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* header  */
-header{
+
+header {
     height: 4rem;
     width: 100%;
     background-color: #fff;
     position: fixed;
     z-index: 100;
 }
-nav{
+
+nav {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -20,53 +25,139 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     font-size: 1.8rem;
 }
 
 @media screen and (max-width: 786px) {
-    .links{
+    .links {
         display: none;
     }
-    .logo{
+    .logo {
         margin: auto;
     }
-  }
+}
 
-nav ul li{
+nav ul li {
     display: inline;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: black;
     padding-left: 20px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: rgb(0, 132, 255);
     transition: 0.2s;
 }
 
 /* hero */
 
-.hero-page{
+.hero-page {
     height: 100vh;
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
-
 }
 
-.hero-image img{
+@media screen and (min-width: 786px) {
+    .hero-image img {
+        margin-left: 50px;
+    }
+}
+
+.hero-image img {
     height: 400px;
     border-radius: 20px;
 }
+
 @media screen and (max-width: 786px) {
-    .hero-page{
-        
+    .hero-page {
         height: 100vh;
         width: 100%;
         flex-direction: column;
-       justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-image img {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+}
+
+.explore {
+    width: 150px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+.explore:hover {
+    background-color: rgb(0, 132, 255);
+    transition: 0.2s;
+}
+
+.compass {
+    padding-left: 10px;
+}
+
+.hero-content {
+    margin-left: 100px;
+}
+
+.hi {
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+.hero-name {
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(0, 132, 255);
+}
+
+.dev {
+    font-size: 1.5rem;
+}
+.hero-button{
+    width: 150px;
+}
+
+@media screen and (min-width: 786px) {
+    .nope{
+        display: none;
+    }       
+}
+@media screen and (max-width: 786px) {
+    .hero-content {
+        width: 80%;
+    }
+    
+    .hi {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .hero-name {
+        font-size: 3rem;
+        font-weight: 600;
+        color: rgb(0, 132, 255);
+    }
+    .dev {
+        font-size: 1.2rem;
+    }
+    .disless{
+        display: none;
     }
 }
