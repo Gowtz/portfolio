@@ -186,6 +186,7 @@ a{
 }
 .card:hover{
     transform: translateY(-10px);
+    transition: 0.2s;
 }
 @media screen and (max-width: 786px) {
     .card-page{
