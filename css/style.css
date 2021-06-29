@@ -66,6 +66,7 @@ nav ul li a:hover {
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width: 786px) {
