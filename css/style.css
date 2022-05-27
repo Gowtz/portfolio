@@ -197,3 +197,17 @@ a{
 footer{
     height: 100px;
 }
+
+.social-links li{
+    list-style:none;
+    display:inline-block;
+    padding: 20px 10px 0 0;
+
+}
+.social-links li a {
+    text-decoration:none;
+    color:black;
+}
+i{
+    font-size:2rem;
+}
