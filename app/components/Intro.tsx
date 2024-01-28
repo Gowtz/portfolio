@@ -7,11 +7,11 @@ export default function Intro() {
   <div className="h-lvh md:px-24 flex items-center justify-center ">
         <div className="w-3/5">
           <div className="hidden md:block text-5xl leading-relaxed mb-10 ">
-            As an aspiring developer, I'm on a journey to transform lines of
+            As an aspiring developer, I&apos;m on a journey to transform lines of
             code into meaningful and impactful creations.
           </div>
           <div className="block md:hidden text-3xl leading-relaxed mb-10 ">
-            As an aspiring developer, I'm on a journey to transform lines of
+            As an aspiring developer, I&apos;m on a journey to transform lines of
             code into meaningful and impactful creations.
           </div>
           <a href="#tools">
