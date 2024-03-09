@@ -12,7 +12,7 @@ export default function Header() {
                             <a href="#skills">Skills</a>
                         </li>
                         <li className="hidden md:block hover:text-blue-50 ease-in duration-100">
-                            <a href="#projects">Projects</a>
+                            <a href="#projects">Profile</a>
                         </li>
                         <li className=" bg-slate-100 font-semibold text-gray-800 py-3 px-4 rounded-md">
                             <a href="/Resume.pdf" download="Resume">
