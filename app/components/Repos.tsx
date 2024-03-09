@@ -16,8 +16,8 @@ export default async function Repos() {
     return (
 
         <>
-            <h1 className="text-4xl pb-5 mt-10 text-center">Repository's</h1>
-            <div className="repos grid grid-cols-1 lg:grid-cols-2 ">
+            <h1 className="text-4xl pb-5 mx-10 mt-10 text-center">REPOSITORIES</h1>
+            <div className="repos grid grid-cols-1 xl:grid-cols-2 ">
                 {repository.map(repo => {
                     if (!repo.fork) {
                         return (
