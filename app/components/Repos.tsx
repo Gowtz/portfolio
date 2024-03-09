@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Repose from "./Repose"
 type repo = {
+    id:number,
     full_name: string,
     private: boolean,
     html_url: string,
@@ -15,13 +16,13 @@ export default async function Repos() {
     return (
 
         <>
-            <h1 className="text-4xl pb-5 text-center">Repository's</h1>
-            <div className="repos grid grid-cols-2">
+            <h1 className="text-4xl pb-5 mt-10 text-center">Repository's</h1>
+            <div className="repos grid grid-cols-1 lg:grid-cols-2 ">
                 {repository.map(repo => {
                     if (!repo.fork) {
                         return (
                             <>
-                                <div className="rep flex flex-col text-blue-300 bg-blue-950 m-2 py-2 px-10 rounded-md overflow-hidden">
+                                <div  key={repo.id} className="rep flex flex-col text-blue-300 bg-blue-950 m-2 py-2 px-10 rounded-md overflow-hidden">
                                     <a href={repo.html_url} target="_blank">
                                         <h1 className="py-2 text-3xl hover:text-white hover:underline ease-in"> {repo.full_name.slice(15)}</h1>
                                     </ a>

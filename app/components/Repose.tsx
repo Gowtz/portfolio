@@ -4,7 +4,7 @@ export default async function Repo({ lang }) {
     return (
         <div>
             {
-                keyss.map((key) => {return <span className="px-1"> {key}</span> })
+                keyss.map((key) => {return <span key={key} className="px-1"> {key}</span> })
             }
         </div>
     )

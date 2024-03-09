@@ -14,8 +14,8 @@ export default async function Githubrecords() {
     const response = await fetch('https://api.github.com/users/gowtham-dev369')
     const data: user = await response.json()
     return (
-        <div className="mt-36  ">
-            <div className="card w-9/12 m-auto flex justify-between items-center">
+        <div className="mt-36  " >
+            <div className="card w-10/12 m-auto flex justify-between items-center flex-col lg:flex-row">
                 <div className="profile w-2/6 flex flex-col justify-center items-center">
                     <Image src={data.avatar_url} alt="avatar" height={400} width={400} className="rounded-2xl my-5" />
                     <a href={data.url} className="text-4xl mb-2 hover:underline ">{data.name}</a>
