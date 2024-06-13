@@ -11,7 +11,7 @@ type user = {
 }
 
 export default async function Githubrecords() {
-    const response = await fetch('https://api.github.com/users/gowtham-dev369')
+    const response = await fetch('https://api.github.com/users/gowtz')
     const data: user = await response.json()
     return (
         <div className="mt-36  " id="profile" >

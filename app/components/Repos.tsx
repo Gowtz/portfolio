@@ -12,7 +12,7 @@ type repo = {
 }
 
 export default async function Repos() {
-    const repository: repo[] = await fetch('https://api.github.com/users/gowtham-dev369/repos').then(res => res.json())
+    const repository: repo[] = await fetch('https://api.github.com/users/gowtz/repos').then(res => res.json())
     return (
 
         <>
