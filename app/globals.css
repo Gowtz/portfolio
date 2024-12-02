@@ -2,15 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior:smooth;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #e8e8e8;
   --foreground: #171717;
+  --secondary: #959593;
+  --thrice: #e8e8e8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1a1a;
     --foreground: #ededed;
+    --secondary: #827f78;
+    --thrice: #838079;
   }
 }
 
@@ -25,3 +33,33 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation {
+animation:1s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 slideInFromLeft
+}
+.animation-header {
+animation:0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 slideInFromLeft
+}
+
