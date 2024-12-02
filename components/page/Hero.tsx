@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center font-semibold">
+    <div className="min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center font-semibold container mx-auto">
       <div className="flex flex-col justify-center items-center mx-auto px-11 text-center ">
         <h1 className="text-6xl lg:text-7xl mb-8 animation">
           Hi! i am Gowtham
