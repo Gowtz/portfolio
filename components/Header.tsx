@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="container mx-auto animation-header">
-      <nav className="flex justify-between items-center h-24 w-full px-10">
+      <nav className=" hidden md:flex justify-between items-center h-24 w-full px-10">
         <div className="Gowtcol ham">Gowtham</div>
 
         <ul className="flex gap-5">
