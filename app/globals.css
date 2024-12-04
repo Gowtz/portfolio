@@ -12,24 +12,27 @@ html{
 }
 
 :root {
-  --background: #e8e8e8;
+  --background: #FAFAFA;
   --foreground: #171717;
-  --secondary: #959593;
-  --thrice: #e8e8e8;
+  --text-secondary: #525252;
+  --text-third: #0a0a0a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a1a1a;
-    --foreground: #ededed;
-    --secondary: #827f78;
-    --thrice: #838079;
+    --background: #0A0A0A;
+    --foreground: #FAFAFA;
+    --text-secondary: #D4D4D4;
+    --text-third: #A3A3A3;
+    --border-color: #333;
+    --border-hover: #4D4D4D
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background-image: linear-gradient(180deg,#02001c,#05022c,#00053d,#00054d,#00005c); */
+  background-color:var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,7 +40,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+
+}A
 
 @keyframes slideInFromLeft {
   0% {

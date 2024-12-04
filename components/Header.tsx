@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="container mx-auto animation-header">
+    <header className="container mx-auto animation-header text-foreground">
       <nav className=" hidden md:flex justify-between items-center h-24 w-full px-10">
         <div className="Gowtcol ham">Gowtham</div>
 
@@ -12,7 +12,7 @@ export default function Header() {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#expreince">Expreince</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
             <a href="#project">Project</a>
