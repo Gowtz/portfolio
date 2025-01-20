@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <div className="min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center font-semibold container mx-auto text-foreground">
@@ -9,6 +11,9 @@ export default function Hero() {
           I&apos;m on a journey to transform lines of code into meaningful and
           impactful creations.
         </h3>
+        <Link href={'#about'} className="my-20">
+          <div className="px-5 py-2 rounded-lg bg-white text-background animation  text-2xl font-light transition-all duration-500 ">Know more</div>
+        </Link>
       </div>
     </div>
   );

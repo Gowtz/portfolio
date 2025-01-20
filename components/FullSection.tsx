@@ -1,6 +1,6 @@
 export default function FullSection({children}:any) {
   return (
-  <div className="min-h-screen px-10 mx-auto container ">{children}</div>
+  <div className="px-10 mx-auto container my-44">{children}</div>
   )
 }
 

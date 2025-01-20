@@ -10,7 +10,9 @@ html{
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-
+colo{
+  colume-list:3;
+}
 :root {
   --background: #FAFAFA;
   --foreground: #171717;
