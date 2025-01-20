@@ -8,13 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        textSecondary: "var(--text-secondary)",
+        textThird: "var(--text-third)",
+        borderColor:"var(--border-color)",
+        borderColorHover:"var(--border-hover)"
+      },
+      animationDuration: {
+        "300ms": "300ms",
+        "900ms": "900ms",
+      },
+      animationDelay: {
+        "300ms": "300ms",
+        "900ms": "900ms",
       },
     },
   },
   plugins: [],
 };
+
 export default config;

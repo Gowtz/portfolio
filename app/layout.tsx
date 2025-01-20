@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/Header";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: "Gowtham",
-  description: "Portfolio of Gowtham",
+  title: "Gowtham Portfolio",
+  description: "Web developer Portfolio",
 };
 
 export default function RootLayout({
@@ -20,12 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <body className={poppins.className}>
-        <Header />
-        <div className="">{children}</div>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
   );
